@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color:#444;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color:#ccc;
+  }
+  
+  #resume {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: rgb(75, 67, 67);
+    margin-bottom: 10px;
+  }
+  
+  .editable {
+    border: 1px dashed black;
+    padding: 8px;
+    margin: 10px 0;
+    min-height: 30px;
+    border-radius: 4px;
+    background-color: #fafafa;
+  }
+  
+  .editable:focus {
+    border-color: gray;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .editable::before {
+    content: attr(placeholder);
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .editable:empty::before {
+    display: block;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .editable {
+    border: 1px dashed #ccc;
+    padding: 8px;
+    margin: 10px 0;
+    min-height: 30px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    position: relative;
+  }
+  
+  .editable:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .editable::before {
+    content: attr(placeholder);
+    color: #aaa;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .editable:not(:empty)::before {
+    display: none;
+  }
+    

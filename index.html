@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Editable Resume</h1>
+  <div id="resume">
+    <h2>Personal Information</h2>
+    <p class="editable" contenteditable="true" id="name" placeholder="Enter your name here"></p>
+    <p class="editable" contenteditable="true" id="email" placeholder="Enter your email address"></p>
+    <p class="editable" contenteditable="true" id="contact" placeholder="Enter your contact number"></p>
+    <p class="editable" contenteditable="true" id="address" placeholder="Enter your address"></p>
+
+    <h2>Academic Qualification</h2>
+    <p class="editable" contenteditable="true" id="qualification" placeholder="Add your academic qualification"></p>
+
+    <h2>Skills</h2>
+    <p class="editable" contenteditable="true" id="skills" placeholder="List your skills"></p>
+
+    <h2>Field Expertise</h2>
+    <p class="editable" contenteditable="true" id="expertise" placeholder="Describe your field expertise"></p>
+
+    <h2>Employment Experience</h2>
+    <p class="editable" contenteditable="true" id="experience" placeholder="Detail your employment experience"></p>
+  </div>
+
+  <div class="button-container">
+    <button id="share-link">Share Link</button>
+    <button id="download-pdf">Download as PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
